@@ -111,7 +111,8 @@ body, h1, h2, h3{
 }
 
 @media(max-width: 768px){
-    body{
-        display: none;
-    }
+    #unity-canvas{
+	    width: 540px;
+	    height: 960px;
+	}
 }
