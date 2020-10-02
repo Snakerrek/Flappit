@@ -52,13 +52,11 @@
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
-      } else {
-        canvas.style.width = "540px";
-        canvas.style.height = "960px";
-      }
+      
+      canvas.style.width = "540px";
+      canvas.style.height = "960px";
+      
+      
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
