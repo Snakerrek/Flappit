@@ -1,0 +1,117 @@
+body, h1, h2, h3{
+    margin: 0;
+}
+
+@keyframes fly{
+    0%{
+        transform: translateX(-1400px) translateY(1400px);
+    }
+    100%{
+        transform: translateY(-300px) translateX(-120px) rotate(-30deg);
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes flyFish{
+    0%{
+        transform: translateX(-1400px) translateY(1400px);
+    }
+    100%{
+        transform: translateY(50px) translateX(70px) rotate(-30deg);
+    }
+}
+
+@keyframes flyRocket{
+    0%{
+        transform: translateX(-1400px) translateY(1400px);
+    }
+    100%{
+        transform: translateY(50px) translateX(-390px);
+    }
+}
+
+.jumbo{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./img/Background\ up.png");
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.jumboContent h2{
+    font-family: 'Coming Soon';
+    font-weight: bolder;
+    font-size: 7.2rem;
+    animation: float 2s ease-in-out infinite;
+    z-index: 1;
+}
+
+.birb, .fish, .rocket{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.birb{
+    animation: fly 2s ease-in forwards;
+}
+
+.fish{
+    animation: flyFish 2.5s ease-in forwards;
+}
+
+.rocket{
+    animation: flyRocket 3s ease-in forwards;
+}
+
+.mobile{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.unity-box{
+    background-image: url("./img/BG_cosmos.png");
+    position: relative;
+    min-height: 1000px;
+}
+
+.footer{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: red;
+}
+
+@media(max-width: 768px){
+    body{
+        display: none;
+    }
+}
